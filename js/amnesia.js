@@ -79,7 +79,7 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
       // 获取 <video>
       var video = document.getElementById('video');
       // 插入视频(m3u8)
-      var videoSrc = 'https://cdn.jsdelivr.net/gh/Amnesia-f/CDN/video/'+randomNum+'.m3u8';
+      var videoSrc = 'https://cdn.jsdelivr.net/gh/Amnesia-f/jsDelivr_CDN/video/'+randomNum+'.m3u8';
       if (Hls.isSupported()) {
         var hls = new Hls();
         hls.loadSource(videoSrc);
@@ -100,7 +100,7 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
     // 获取 <video>
     var video = document.getElementById('video');
     // 插入视频(m3u8)
-    var videoSrc = 'https://cdn.jsdelivr.net/gh/Amnesia-f/CDN/video/mobile/'+randomNum+'.m3u8';
+    var videoSrc = 'https://cdn.jsdelivr.net/gh/Amnesia-f/jsDelivr_CDN/video/mobile/'+randomNum+'.m3u8';
     if (Hls.isSupported()) {
       var hls = new Hls();
       hls.loadSource(videoSrc);
