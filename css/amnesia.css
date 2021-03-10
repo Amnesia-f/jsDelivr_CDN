@@ -20,13 +20,6 @@
     text-decoration: none;
 }
 
-/*修复添加up酱后图标上移的bug*/
-.fa-arrow-up{
-    position: absolute;
-    top: 70px;
-    left: 7px;
-}
-
 /*自定义up酱样式*/
 #upj{
     max-width: 1000%;
