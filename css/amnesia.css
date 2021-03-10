@@ -26,6 +26,13 @@
     transform: translate(-70px,-50px);
 }
 
+/*修复添加up酱后图标上移的bug*/
+.fa-arrow-up{
+    position: absolute;
+    top: 70px;
+    left: 7px;
+}
+
 /*页脚自定义字段字体颜色*/
 .footer_custom_text{
     color:#00c4b6;
