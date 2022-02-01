@@ -1,0 +1,198 @@
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5 !important;
+  background-image: -webkit-linear-gradient(
+	45deg,
+	rgba(255, 255, 255, 0.4) 25%,
+	transparent 25%,
+	transparent 50%,
+	rgba(255, 255, 255, 0.4) 50%,
+	rgba(255, 255, 255, 0.4) 75%,
+	transparent 75%,
+	transparent
+  ) !important;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f !important;
+}
+
+
+/* twikoo评论适配暗黑模式 */
+:root{
+  --heo-white: #fff;
+  --heo-blue: #286dea;
+  --heo-none: rgba(0,0,0,0);
+  --heo-gray: #999999;
+}
+[data-theme=light] {
+  --heo-fontcolor: #000;
+  --heo-background: #fff;
+  --heo-maskbg: rgba(255, 255, 255, 0.6);
+  --heo-navbg: rgba(255, 255, 255, 0.9);;
+  --heo-hovertext: #286dea;
+  --heo-ahoverbg: #F7F7FA;
+  --heo-lighttext: #ef794f;
+  --heo-secondtext: rgba(0, 0, 0, 0.6);
+
+/*页脚自定义字段字体颜色*/
+.footer_custom_text{
+  color: #00c4b6;
+}
+
+/*个人博客颜色修改*/
+#page-header #site_title{
+  color: #80bdab;
+}
+
+/*a标签颜色*/
+a{
+  color: #00c4b6;
+}
+
+/*头部文字颜色*/
+#nav a{
+  color: #f9f2f4;
+}
+
+/* 博主昵称颜色 */
+.author-info__name {
+  color: #ff7242;
+}
+
+/* 首页中间打字效果上方 */
+#page-header #site_title {
+  color: #ffffff;
+}
+
+/* 评论框  */
+
+.vwrap {
+  box-shadow: 2px 2px 5px #bbb;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px 0px 30px 0px;
+}
+
+
+/* 提交按钮 */
+
+#vcomment button {
+  padding: 0.3rem 0.8rem;
+  border-color: #fff;
+  background-color: #e58a8a;
+  color: #fff;
+  font-size: 0.7rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+/* 评论区代码块 */
+
+.v[data-class=v] code {
+  color: #c7254e;
+  background-color: #F9F2F4;
+}
+/* 设置评论框 */
+
+.vcard {
+  box-shadow: 2px 2px 5px #bbb;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px 0px 0px 0px;
+}
+
+
+/* 取消回复聊天框 */
+
+.vquote .vcard {
+  box-shadow: 2px 2px 5px transparent;
+  background: rgba(255, 255, 255, 0.0);
+  padding: 0px;
+}
+
+
+/* 打字效果渐变 */
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+      background-position: 0 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
+}
+
+#subtitle {
+  background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#subtitle:before {
+  background-color: rgba(0, 0, 0, 0);
+}
