@@ -20,6 +20,17 @@
     background-color: #e58a8a;
 }
 
+/* 字体 */
+@font-face{
+  font-family:'PingFang' ;  /* 字体名自定义即可 */
+  src:url('https://cdn.jsdelivr.net/gh/Amnesia-f/jsDelivr_CDN/font/苹方字体.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+h1#site-title {
+  font-family: 'PingFang', sans-serif;
+}
+
 /* twikoo评论适配暗黑模式 */
 :root{
   --heo-white: #fff;
