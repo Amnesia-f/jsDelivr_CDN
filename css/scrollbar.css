@@ -25,6 +25,12 @@
   background: url(https://gcore.jsdelivr.net/gh/rigodlee/BLOGCDN/img/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
 }
 
+/* 版权字体微调 */
+.post-copyright {
+    font-family: 'aqqxs', sans-serif;
+    font-size: large
+}
+
 /* 字体 */
 @font-face{
   font-family:'MiSans Regular' ;  /* 字体名自定义即可 */
@@ -34,6 +40,11 @@
 
 h1#site-title {
   font-family: 'PingFang', sans-serif;
+}
+
+/* 首页磁铁字体微调 */
+a.categoryBar-list-link {
+    text-shadow: #0000001a 1px 0 0, #000000 0 1px 0, #000000 -1px 0 0, #00000000 0 -1px 0;
 }
 
 /* twikoo评论适配暗黑模式 */
@@ -56,6 +67,21 @@ h1#site-title {
 
 }
 
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+
+/* 头图透明 */
+#page-header{
+background: transparent!important;
+}
+
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+background-color: transparent!important;
+}
+
 /*页脚自定义字段字体颜色*/
 .footer_custom_text{
   color: #00c4b6;
@@ -66,10 +92,6 @@ h1#site-title {
   color: #80bdab;
 }
 
-/*a标签颜色*/
-a{
-  color: #00c4b6;
-}
 
 /*头部文字颜色*/
 #nav a{
@@ -119,6 +141,8 @@ a{
   color: #c7254e;
   background-color: #F9F2F4;
 }
+
+
 /* 设置评论框 */
 
 .vcard {
@@ -138,62 +162,3 @@ a{
   padding: 0px;
 }
 
-
-/* 打字效果渐变 */
-
-@-webkit-keyframes Gradient {
-  0% {
-      background-position: 0 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-      background-position: 0 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-      background-position: 0 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0 50%;
-  }
-}
-
-#subtitle {
-  background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
-  -o-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#subtitle:before {
-  background-color: rgba(0, 0, 0, 0);
-}
