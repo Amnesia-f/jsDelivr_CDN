@@ -25,12 +25,6 @@
   background: url(https://gcore.jsdelivr.net/gh/rigodlee/BLOGCDN/img/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
 }
 
-/* 版权字体微调 */
-.post-copyright {
-    font-family: 'aqqxs', sans-serif;
-    font-size: large
-}
-
 /* 字体 */
 @font-face{
   font-family:'MiSans Regular' ;  /* 字体名自定义即可 */
@@ -70,16 +64,6 @@ a.categoryBar-list-link {
 /* 页脚透明 */
 #footer{
   background: transparent!important;
-}
-
-/* 头图透明 */
-#page-header{
-background: transparent!important;
-}
-
-/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
-#page-header.post-bg:before {
-background-color: transparent!important;
 }
 
 /*页脚自定义字段字体颜色*/
