@@ -28,7 +28,7 @@
 /* 字体 */
 @font-face{
   font-family:'MiSans Regular' ;  /* 字体名自定义即可 */
-  src:url('https://cdn.jsdelivr.net/gh/Amnesia-f/jsDelivr_CDN/font/MiSans Regular.ttf'); /* 字体文件路径 */
+  src:url('https://unpkg.com/aciano-cdn@1.0.0/font/MiSans Regular.ttf'); /* 字体文件路径 */
   font-display : swap;
 }
 
