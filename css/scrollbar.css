@@ -20,15 +20,15 @@
     background-color: #e58a8a;
 }
 
-/* 效果一：彩带 */
+/* 效果一：彩带
 .card-info-avatar:hover {
-  background: url(https://gcore.jsdelivr.net/gh/rigodlee/BLOGCDN/img/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
-}
+  background: url(https://cdn.staticaly.com/gh/rigodlee/BLOGCDN/img/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
+} */
 
 /* 字体 */
 @font-face{
   font-family:'MiSans Regular' ;  /* 字体名自定义即可 */
-  src:url('https://unpkg.com/aciano-cdn@1.0.0/font/MiSans Regular.ttf'); /* 字体文件路径 */
+  src:url('https://npm.arcitcgn.cn/aciano-cdn@1.0.10/font/MiSans Regular.ttf'); /* 字体文件路径 */
   font-display : swap;
 }
 
@@ -76,10 +76,20 @@ a.categoryBar-list-link {
   color: #80bdab;
 }
 
-
 /*头部文字颜色*/
 #nav a{
   color: #f9f2f4;
+}
+
+/* 图片下方文字解释 */
+.jg-caption-visible::before {
+  content: "⊙ ";
+} 
+.fancybox-caption__body::before {
+  content: "⊙ ";
+} 
+.img-alt.is-center::before {
+  content: "⊙ ";
 }
 
 /* 博主昵称颜色 */
