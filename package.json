@@ -1,6 +1,6 @@
 {
   "name": "aciano-cdn",
-  "version": "1.0.21",
+  "version": "2.0.1",
   "description": "静态资源仓库",
   "main": "index.js",
   "scripts": {
